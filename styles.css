@@ -132,6 +132,7 @@ main {
     article {
       height: var(--scrollable-height);
       overflow: auto;
+      font-size: 2.25em;
     }
 
     aside {
@@ -144,4 +145,18 @@ main {
 footer {
   height: var(--footer-height);
   background-color: var(--footer-color);
+}
+
+#scrollbar {
+  position: fixed;
+  top: var(--banner-height);
+  right: 14px;
+  width: 24px;
+  height: var(--scrollable-height);
+  background-color: #909;
+  overflow: auto;
+
+  #stuff {
+    height: 1200px;
+  }
 }
