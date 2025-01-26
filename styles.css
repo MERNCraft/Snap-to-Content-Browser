@@ -100,6 +100,7 @@ body {
   --footer-height: 500px;
   --footer-color: #060;
 }
+
 #fixed-banner {
   position: fixed;
   z-index: 1;
@@ -113,13 +114,13 @@ div#scrollable {
   width: 100%;
   top: var(--banner-height);
   height: var(--scrollable-height);
-  overflow: auto;
+  overflow: hidden;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
-  overflow-y: auto;
+  overflow: hidden;
 
   header {
     height: var(--header-height);
@@ -131,7 +132,7 @@ main {
 
     article {
       height: var(--scrollable-height);
-      overflow: auto;
+      overflow: hidden;
       font-size: 2.25em;
     }
 
@@ -150,8 +151,9 @@ footer {
 #scrollbar {
   position: fixed;
   top: var(--banner-height);
-  right: 14px;
-  width: 24px;
+  right: 0;
+  width: 16px;
+  /* width: 100vw; */
   height: var(--scrollable-height);
   background-color: #909;
   overflow: auto;
