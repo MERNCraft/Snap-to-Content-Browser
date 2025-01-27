@@ -59,7 +59,7 @@ function initialize() {
 
     } else {
       // Scroll the whole scrollable section to show footer
-      scrollable.scrollTop = scrollTop - articleScroll - buffer
+      scrollable.scrollTop = scrollTop - articleScroll - buffer * 2
     }
   }
 }
